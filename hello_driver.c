@@ -6,7 +6,6 @@
  */
 
 #include <linux/module.h>
-#include <linux/init.h>
 
 /* Module init function */
 static int __init hello_world_init(void)
