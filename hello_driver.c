@@ -1,11 +1,12 @@
 /*
- * Name: hello-_river.c
+ * Name: hello_driver.c
  * Purpose: Prints hello world and goodbye cruel world as a kernel log when 
  *          initialised and deinitialised
  * Author: Ryan Agius
  */
 
 #include <linux/module.h>
+#include <linux/init.h>
 
 /* Module init function */
 static int __init hello_world_init(void)

@@ -1,4 +1,5 @@
-obj-m += hello_driver.o
+# obj-m += hello_driver.o
+obj-m += hello_argument.o
 
 KDIR ?= /lib/modules/$(shell uname -r)/build
 
