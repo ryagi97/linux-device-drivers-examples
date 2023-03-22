@@ -1,4 +1,4 @@
-obj-m += hello_device_driver.o
+obj-m += simple-driver.o
 
 KDIR ?= /lib/modules/$(shell uname -r)/build
 
