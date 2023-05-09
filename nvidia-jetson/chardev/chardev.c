@@ -1,5 +1,5 @@
 /* 
- * Copied from the Linux Kernel Programming Guide
+ * Copied from the Linux Kernel Module Programming Guide
  * chardev.c: Creates a read-only char device that says how many times 
  * you have read from the dev file 
  */ 
@@ -105,6 +105,7 @@ static void __exit chardev_exit(void)
  */ 
 static int device_open(struct inode *inode, struct file *file) 
 { 
+    // static, this remains in memory, so contents of counter are preserved
     static int counter = 0; 
  
     if (atomic_cmpxchg(&already_open, CDEV_NOT_USED, CDEV_EXCLUSIVE_OPEN)) 
